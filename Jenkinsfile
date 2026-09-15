@@ -33,8 +33,8 @@ pipeline {
                     docker run -d \
                       --name ${GREEN_CONTAINER} \
                       -p ${GREEN_PORT}:8080 \
-                      -e APP_VERSION=v2.0 \
-                      -e APP_ENVIRONMENT=GREEN \
+                      -e App_version=v2.0 \
+                      -e App_en=GREEN \
                       ${IMAGE_NAME}:${IMAGE_TAG}
                 '''
             }
