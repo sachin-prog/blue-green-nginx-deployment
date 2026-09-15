@@ -34,7 +34,7 @@ pipeline {
                       --name ${GREEN_CONTAINER} \
                       -p ${GREEN_PORT}:8080 \
                       -e App_version=v2.0 \
-                      -e App_en=GREEN \
+                      -e App_environment=GREEN \
                       ${IMAGE_NAME}:${IMAGE_TAG}
                 '''
             }
